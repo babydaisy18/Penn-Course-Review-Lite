@@ -1,6 +1,5 @@
 
-// TODO: Write the handleError middleware.
-// This function must be an express error handling middleware
+//express error handling middleware
 
 var handleError = function (err, req, res, next) {
   //render error page ('errorPage') with local vars statusCode, message, stackTrace

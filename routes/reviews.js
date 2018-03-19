@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var reviewsDb = require('../db/reviews');
-// /new endpoint
 
 //on GET, render addreview page
 router.get('/new', function (req, res, next) {
@@ -19,9 +18,5 @@ router.post('/new', function (req, res, next) {
   });
 });
 
- 
-// Implement the routes.
-// Note: the rating will be passed as a string (req.body.rating).
-// Use Number() to transform it to a number before adding it to the database.
 
 module.exports = router;
